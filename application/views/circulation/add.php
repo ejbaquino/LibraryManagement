@@ -4,7 +4,7 @@
 
 <br></br>
 
-<form action="<?php echo base_url('sample/submit') ?>" method="post" class="form-horizontal">
+<form action="<?php echo base_url('circulation/submit') ?>" method="post" class="form-horizontal">
 		<div class="form-group">
 			<label for="circulation_id" class="col-md-1.5 text-right">Circulation ID</label>
 			<div class="col-md-5">
@@ -36,10 +36,16 @@
 			</div>
 		</div>
 		<div class="form-group">
+			<label for="fee" class="col-md-1.5 text-right">Fee</label>
+			<div class="col-md-3">
+				<input type="text" name="txt_fee" class="form-control" required></textarea>
+			</div>
+		</div>
+		<div class="form-group">
 			<label class="col-md-1 text-right"></label>
 			<div class="col-md-10">
 				<input type="submit" name="btnSave" class="btn btn-primary" value="Save">
-                <a href = "<?php echo base_url('sample/index');?>" class = "btn btn-primary">Back</a>
+                <a href = "<?php echo base_url('circulation/index');?>" class = "btn btn-primary">Back</a>
 			</div>
 		</div>
 

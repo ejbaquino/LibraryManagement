@@ -4,7 +4,7 @@
 
 <br></br>
 
-<form action="<?php echo base_url('sample/update') ?>" method="post" class="form-horizontal">
+<form action="<?php echo base_url('circulation/update') ?>" method="post" class="form-horizontal">
     <input type="hidden" name="txt_hidden" value="<?php echo $record->id; ?>">
 		<div class="form-group">
 			<label for="circulation_id" class="col-md-1.5 text-right">Circulation ID</label>
@@ -36,11 +36,17 @@
 				<input type="date" value="<?php echo $record->due_date; ?>" name="txt_due_date" class="form-control" required></textarea>
 			</div>
 		</div>
+        <div class="form-group">
+			<label for="fee" class="col-md-1.5 text-right">Fee</label>
+			<div class="col-md-3">
+				<input type="text" value="<?php echo $record->fee; ?>" name="txt_fee" class="form-control" required></textarea>
+			</div>
+		</div>
 		<div class="form-group">
 			<label class="col-md-1 text-right"></label>
 			<div class="col-md-10">
 				<input type="submit" name="btnUpdate" class="btn btn-primary" value="Update">
-                <a href = "<?php echo base_url('sample/index');?>" class = "btn btn-primary">Back</a>
+                <a href = "<?php echo base_url('circulation/index');?>" class = "btn btn-primary">Back</a>
 			</div>
 		</div>
 
